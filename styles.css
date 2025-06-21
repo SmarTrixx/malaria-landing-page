@@ -1,0 +1,128 @@
+/* General Reset & Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.7;
+  color: #222;
+  background: url('/assets/malaria4.png') no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: brightness(0.8);
+}
+
+/* Overlay background for better text contrast */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.747);
+  z-index: -1;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  background: linear-gradient(to right, #0d2e00, #226840);
+  color: white;
+  padding: 2.5rem 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.4rem;
+}
+
+header .subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Main Content Area */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* Section Cards */
+.card {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 100, 0, 0.1);
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+.card h2 {
+  color: #006400;
+  margin-bottom: 1rem;
+}
+
+.card p, .card li {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+.card.center {
+  text-align: center;
+}
+
+/* Button Styling */
+.join-btn {
+  background: #25D366;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.9rem 1.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.join-btn:hover {
+  background: #128C7E;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.95rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 3rem;
+}
+
+/* Privacy link */
+a {
+  color: #007b33;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Section divider */
+hr {
+  border: none;
+  height: 2px;
+  background: #2e8b57;
+  margin: 2rem 0;
+  opacity: 0.5;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
