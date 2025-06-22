@@ -9,7 +9,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.7;
   color: #222;
-  background-image: url('/assets/background.png') no-repeat center center fixed;
+  background-image: url('assets/background.png') no-repeat center center fixed;
   background-size: cover;
   backdrop-filter: brightness(0.8);
 }
